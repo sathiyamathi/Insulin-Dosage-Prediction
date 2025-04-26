@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History | Insulin Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Previous Records 📜</h2>
+        <a href="{{ url_for('dashboard') }}" class="back">← Back to Dashboard</a>
+        <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date/Time</th>
+                    <th>Age</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>Gender</th>
+                    <th>Hb1Ac</th>
+                    <th>Sugar</th>
+                    <th>Prescribed</th>
+                    <th>Calories</th>
+                    <th>Predicted Dose</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in records %}
+                <tr>
+                    <td>{{ r[11] }}</td>
+                    <td>{{ r[2] }}</td>
+                    <td>{{ r[3] }} cm</td>
+                    <td>{{ r[4] }} kg</td>
+                    <td>{{ r[5] }}</td>
+                    <td>{{ r[6] }}</td>
+                    <td>{{ r[7] }}</td>
+                    <td>{{ r[8] }}</td>
+                    <td>{{ r[9] }}</td>
+                    <td>{{ r[10]|round(2) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

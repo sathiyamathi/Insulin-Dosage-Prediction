@@ -1,0 +1,154 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f6f9fc, #e9eff5);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, select, button {
+    padding: 12px 15px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+button {
+    background: #2980b9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #3498db;
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.flash-container {
+    margin: 10px 0 20px;
+}
+
+.flash {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.flash.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.flash.danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.result-box {
+    margin-top: 30px;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.result-box h3 {
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    font-size: 24px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+a.logout, a.history, a.back {
+    display: inline-block;
+    margin: 15px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e74c3c;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+a.history {
+    background-color: #9b59b6;
+}
+
+a.back {
+    background-color: #16a085;
+}
+
+a.logout:hover, a.history:hover, a.back:hover {
+    opacity: 0.85;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 12px 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
