@@ -49,9 +49,15 @@ Suggests personalized dosage adjustments.
 
 Saves prediction history for each user.
 
+
 # Performance Metrics
 Mean Absolute Error (MAE)
 
 Root Mean Square Error (RMSE)
 
 R² Score
+
+![2](https://github.com/user-attachments/assets/6a0a3ccc-d5dc-44f9-aaed-e6adb5f86ca4)
+![1](https://github.com/user-attachments/assets/c9296590-61e4-40ee-b7d3-132b6fc07934)
+
+
